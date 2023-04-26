@@ -1,6 +1,79 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    /* padding: 0;  */
+}
+
+h2, h3, h4 {
+    /* font-family: "fields", sans-serif;
+    font-weight: 500;
+    font-style: normal; */
+    font-family: "dinosaur", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h1 {
+    /* font-family: "fields", sans-serif;
+    font-weight: 700;
+    font-style: normal; */
+    font-family: "dinosaur", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p {
+    /* font-family: "fields", sans-serif;
+    font-weight: 400;
+    font-style: normal;   */
+    font-family: "dinosaur", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #F2E4E4;
+}
+
+header {
+    background-color: #F2BBC9;
+}
+
+li {
+    /* list-style: none;
+    text-decoration: none;
+    font-family: "fields", sans-serif;
+    font-weight: 400;
+    font-style: normal;  */
+    font-family: "dinosaur", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intro {
+    width: 40%;
+    margin: 2%;
+}
+
+.intro p {
+    margin: 1%;
     
+}
+
+footer  {
+    background-color: #F2BBC9;
 }
