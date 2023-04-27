@@ -5,30 +5,26 @@
 }
 
 h2, h3, h4 {
-    /* font-family: "fields", sans-serif;
-    font-weight: 500;
-    font-style: normal; */
+
     font-family: "dinosaur", sans-serif;
     font-weight: 500;
     font-style: normal;
+    margin: 1%;
 }
 
 h1 {
-    /* font-family: "fields", sans-serif;
-    font-weight: 700;
-    font-style: normal; */
+  
     font-family: "dinosaur", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
 p {
-    /* font-family: "fields", sans-serif;
-    font-weight: 400;
-    font-style: normal;   */
+  
     font-family: "dinosaur", sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: #484848;
 }
 
 body {
@@ -40,11 +36,6 @@ header {
 }
 
 li {
-    /* list-style: none;
-    text-decoration: none;
-    font-family: "fields", sans-serif;
-    font-weight: 400;
-    font-style: normal;  */
     font-family: "dinosaur", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -57,6 +48,7 @@ ul {
 a {
     text-decoration: none;
 }
+
 main {
     max-width: 1280px;
     margin: 0 auto;
@@ -73,6 +65,73 @@ main {
     margin: 1%;
     
 }
+
+
+.hobbies {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hobbies img {
+    width: 320px;
+    
+}
+
+.awards-and-achievements {
+    max-width: 1290px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.awards-and-achievements img  {
+    width: 320px;
+}
+
+.post-secondary-plan {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post-secondary-plan p, {
+    margin: 1%;
+}
+/* #overlay {
+    background-color: #F2BBC9;
+    opacity: 90;
+    z-index: 100;
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+#popup-m1 {
+    background-color: #F2BBC9;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    z-index: 200;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+#close-button {
+    float: right;
+    padding: 1%;
+}
+
+#popup-content {
+    padding: 1%;
+} */
 
 footer  {
     background-color: #F2BBC9;
