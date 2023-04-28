@@ -1,7 +1,7 @@
 const overlay = document.getElementById('overlay')
-const popUpOne = document.getElementById('popup-m1')
-const closeButton = document.getElementById('close-button')
-const movieTextOne = document.getElementById('popup-content')
+const popUpOne = document.getElementById('popup')
+const closeButton = document.getElementById('popupclose')
+const button = document.getElementById('button')
 
 
 closeButton.onclick = function() {
@@ -9,7 +9,7 @@ closeButton.onclick = function() {
     popUpOne.style.display = 'none';
 }
 
-closeButton.onclick = function () {
+button.onclick = function () {
     overlay.style.display = 'block';
     popUpOne.style.display = 'block';
 }

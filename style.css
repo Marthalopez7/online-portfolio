@@ -1,38 +1,36 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    /* padding: 0;  */
+    font-size: 1.2rem;
 }
 
 h2, h3, h4 {
-
     font-family: "dinosaur", sans-serif;
     font-weight: 500;
     font-style: normal;
     margin: 1%;
 }
 
-h1 {
-  
+h1 { 
     font-family: "dinosaur", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
-p {
-  
+p {  
     font-family: "dinosaur", sans-serif;
     font-weight: 400;
-    font-style: normal;
-    color: #484848;
+    font-style: normal; 
 }
 
 body {
     background-color: #F2E4E4;
+    background-image: url("https://www.transparenttextures.com/patterns/wild-flowers.png");
 }
 
 header {
-    background-color: #F2BBC9;
+    background-color: #f2bbc9;
+    background-image: url("https://www.transparenttextures.com/patterns/subtle-carbon.png");
 }
 
 li {
@@ -62,10 +60,8 @@ main {
 }
 
 .intro p {
-    margin: 1%;
-    
+    margin: 1%;   
 }
-
 
 .hobbies {
     max-width: 1280px;
@@ -75,8 +71,18 @@ main {
 }
 
 .hobbies img {
-    width: 320px;
-    
+    width: 320px;   
+}
+
+.about-text {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-text h1 {
+    font-size: 1.7rem;
 }
 
 .awards-and-achievements {
@@ -95,44 +101,74 @@ main {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    background-color: #F2ACCD;
+  
 }
 
-.post-secondary-plan p, {
+.post-secondary-plan p {
     margin: 1%;
 }
-/* #overlay {
-    background-color: #F2BBC9;
-    opacity: 90;
-    z-index: 100;
-    width: 100%;
+
+#overlay {
     display: none;
     position: absolute;
-    top: 0;
-    bottom: 0;
-}
+    top: 5%;
 
-#popup-m1 {
-    background-color: #F2BBC9;
+    right: 10%;
+    left: 5%;
+    background: #999;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 100;
+  }
+
+  #popup{
     display: none;
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 80%;
-    height: 80%;
+    background: #fff;
+    width: 800px;
+    height: 800px;
+   margin-left: -400px; 
+    margin-top: -400px; 
     z-index: 200;
-    margin-left: -100px;
-    margin-top: -100px;
-}
-
-#close-button {
+  }
+  #popupclose {
     float: right;
+    padding: 10px;
+  }
+  .popupcontent {
+    padding: 10px;
+  }
+.resume-container{
+    background-color: whitesmoke;
+    width: 95%;
     padding: 1%;
+    border-radius: 2%;
+    margin: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.resume-container p {
+    color: #F2A0DC;
 }
 
-#popup-content {
-    padding: 1%;
-} */
+.email {
+    float: right;
+}
 
+.title {
+    color: #BF7ABB;
+}
+
+.text h3 {
+    text-align: center;
+
+}
 footer  {
     background-color: #F2BBC9;
+    background-image: url("https://www.transparenttextures.com/patterns/subtle-carbon.png");
+    margin-top: 1%;
+    margin-bottom: 0%;
 }
