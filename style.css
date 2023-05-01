@@ -63,6 +63,17 @@ main {
     margin: 1%;   
 }
 
+.programming-container {
+    width: 100%;
+    height: 510px;
+    position: relative;
+}
+
+.programming-container img {
+    margin-left: 0;
+    margin-right: 0%;
+}
+
 .hobbies {
     max-width: 1280px;
     margin: 0 auto;
@@ -121,7 +132,7 @@ main {
     height: 100%;
     opacity: 0.8;
     z-index: 100;
-  }
+}
 
   #popup{
     display: none;
@@ -134,14 +145,15 @@ main {
    margin-left: -400px; 
     margin-top: -400px; 
     z-index: 200;
-  }
+}
   #popupclose {
     float: right;
     padding: 10px;
-  }
+}
   .popupcontent {
     padding: 10px;
-  }
+}
+
 .resume-container{
     background-color: whitesmoke;
     width: 95%;
@@ -166,6 +178,11 @@ main {
     text-align: center;
 
 }
+
+.programming-box-one img{
+    width: 50%;
+}
+
 footer  {
     background-color: #F2BBC9;
     background-image: url("https://www.transparenttextures.com/patterns/subtle-carbon.png");
