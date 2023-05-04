@@ -46,6 +46,16 @@ a {
     text-decoration: none;
 }
 
+nav ul a {
+    color: #391BA6;
+    text-decoration: none;
+    transition: ease-in-out 350ms;
+}
+
+nav ul a:hover {
+    color: #B8B6F2;
+}
+
 main {
     max-width: 1280px;
     margin: 0 auto;
@@ -59,7 +69,10 @@ main {
 }
 
 .intro p {
-    margin: 1%;   
+    margin-top: 1%;  
+    background-color: #F2ACCD; 
+    padding: 2%;
+    border-radius: 25px;
 }
 
 .programming-container {
@@ -109,13 +122,19 @@ main {
 .post-secondary-plan {
     max-width: 1280px;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #F2ACCD;
-  
 }
 
 .post-secondary-plan p {
+    margin: 1%;
+    padding: 1%;
+    background-color: #F2ACCD;
+    border-radius: 25px;
+}
+
+.post-secondary-plan h3 {
+    background-color: #F2ACCD;
+    border-radius: 25px;
+    text-align: center;
     margin: 1%;
 }
 
@@ -186,12 +205,14 @@ main {
 
 #programmingmain img{
     width: 50%;
+    border-radius: 50px;
 }
 
 #programmingmain p {
     background-color: #F2ACCD;
     padding: 1%;
-margin-top: 1%;
+    margin-top: 1%;
+    border-radius: 25px;
 }
 
 #programmingmain h3 {
@@ -206,12 +227,12 @@ margin-bottom: 1%;
 .project-grid  {
     width: 100%;
     display: flex;
-   flex-wrap: wrap;
-   
+   flex-wrap: wrap; 
 }
 
 .project-grid img {
     width: 90%;
+    border-radius: 50px;
 }
 
 .project-one,
@@ -235,14 +256,70 @@ margin-bottom: 1%;
     margin-top: 1%;
     margin-bottom: 1%;
     padding: 1%;
+    border-radius: 25px;
 }
 
 #writingmain img {
     width: 50%;
+    border-radius: 50px;
 }
 
 #writingmain h1 {
     margin: 1%;
+    background-color: #F2ACCD;
+    border-radius: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+#writingmain h4 {
+    text-align: center;
+    background-color: #F2ACCD;
+    border-radius: 25px;
+    margin-top: 1%;
+}
+
+#personalmain img {
+    width: 70%;
+
+}
+
+.introp h1 {
+    margin: 1%;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #F2ACCD;
+    border-radius: 25px;
+}
+
+#backgroundp  {
+    margin: 1%;
+    background-color: #F2ACCD;
+    padding: 1%;
+    border-radius: 25px;
+}
+
+.personal,
+.personal-text {
+    width: 48%;
+    margin: 1%;
+}
+
+.video,
+.video-text {
+    width: 48%;
+    margin: 1%;
+}
+
+.personal-text,
+.video-text {
+    background-color: #F2BBC9;
+    padding: 1%;
+}
+
+.personal-text h4,
+.video-text h4 {
+    text-align: center;
 }
 
 footer  {
