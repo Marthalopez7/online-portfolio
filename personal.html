@@ -10,18 +10,30 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="resume.html">resume</a></li>
-                <li><a href="overview.html">overview</a></li>
-                <li><a href="programming.html">programming projects</a></li>
-                <li><a href="writing.html">writing projects</a></li>
-                <li><a href="personal.html">personal work</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+          <a href="#" class="logo">logo</a>
+            <input type="checkbox" name="hamburger" id="hamburger">
+            <label for="hamburger"><span></span></label>
+
+            <nav>
+                <ul class="menus" >
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li>
+                        <button type="button">Projects <span class="arrow"></span></button>
+                        <ul class="dropdown">
+                            <li><a href="overview.html">Projects Overview</a></li>
+                            <li><a href="programming.html">Programming Projects</a></li>
+                            <li><a href="writing.html">Writing Projects</a></li>
+                        </ul>
+                    </li>                   
+                    <li><a href="personal.html">Personal work</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>  
+        </div>
+        
     </header>
     <main id="personalmain">
         <div class="introp">

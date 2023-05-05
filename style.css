@@ -30,6 +30,137 @@ body {
 header {
     background-color: #f2bbc9;
     background-image: url("https://www.transparenttextures.com/patterns/subtle-carbon.png");
+    position: relative;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.header-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+label {
+    padding: 23px 20px;
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+}
+
+input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    right: 0;
+}
+
+label span {
+    width: 20px;
+    height: 3px;
+    display: block;
+    position: relative;
+    background-color: #391BA6;
+}
+
+label span ::after, label span ::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background: inherit;
+    width: inherit;
+    height: inherit;
+}
+
+label span ::before {
+    margin-top: 8px;
+}
+
+label span ::after {
+    margin-bottom: 8px;
+}
+
+label::before {
+    position: absolute;
+    content: "";
+    width: 58px;
+    height: 49px;
+    top: 0;
+    right: 0;
+}
+
+input[type="checkbox"]:focus + label::before {
+    box-shadow: 0 0 20px black;
+}
+
+ul li button {
+    font-size: inherit;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
+}
+
+ul li a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+} 
+
+ul li a, ul li button {
+    padding: 0.7rem 1rem;
+    text-align: left;
+}
+
+.menus {
+    position: absolute;
+    margin-top: .5%;
+    left: 82%;
+    visibility: hidden; 
+    transform: translateY(-1em);
+    transition: transform ease 0.2s; 
+    background-color: #f2bbc9;
+    background-image: url("https://www.transparenttextures.com/patterns/subtle-carbon.png");
+}
+
+input[type="checkbox"]:checked ~ nav > ul {
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown {
+    padding: 2px 1.5rem;
+    height: 0;
+    overflow: hidden;
+    transition: height ease 0.2s;
+}
+
+li:focus-within .dropdown {
+    height: 5%;
+}
+
+.arrow {
+    width: 0.5em;
+    height: 0.5em;
+    display: inline-block;
+    vertical-align: middle;
+    border-left: 0.15em solid currentColor;
+    border-bottom: 0.15em solid currentColor;
+    transform: rotate(-45deg);
+    margin-left: 0.38em;
+    margin-top: -0.25em;
+    transition: transform 100ms ease-in-out;
+}
+
+li:focus-within > button > .arrow {
+    transform: rotate(-225deg);
+    margin-top: 4px;
 }
 
 li {
@@ -47,9 +178,7 @@ a {
 }
 
 nav ul a {
-    color: #391BA6;
     text-decoration: none;
-    transition: ease-in-out 350ms;
 }
 
 nav ul a:hover {
@@ -86,6 +215,11 @@ main {
     margin-right: 0%;
 }
 
+.aboutmain {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 .hobbies {
     max-width: 1280px;
     margin: 0 auto;
@@ -98,10 +232,10 @@ main {
 }
 
 .about-text {
-    max-width: 1280px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
+    background-color: #F2ACCD;
+    border-radius: 25px;
+    margin: 1%;
+    text-align: center;
 }
 
 .about-text h1 {
@@ -188,6 +322,18 @@ main {
     float: right;
 }
 
+#download {
+    background-color: #F1A7A6;
+    border-color: lightgray;
+    cursor: pointer;
+}
+
+.certificate,
+.letter,
+.resume {
+    margin: 1%;
+}
+
 .title {
     color: #BF7ABB;
 }
@@ -196,15 +342,20 @@ main {
     text-align: center;
 
 }
+#overviewmain h1 {
+    font-size: 1.5rem;
+    margin: 1%;
+}
 
 .description {
     background-color: #F2ACCD;
     padding: 1%;
+    border-radius: 25px;
 }
 
 
 #programmingmain img{
-    width: 50%;
+    width:100%;
     border-radius: 50px;
 }
 
@@ -219,9 +370,29 @@ main {
     margin: 1%;
 }
 
+#ph1 {
+    font-size: 1.5rem;
+}
+
+#boxcontainer  {
+    display: flex;
+}
+
+.programming-box-one,
+.programming-box-two,
+.programming-box-three,
+.programming-box-four,
+.programming-box-five,
+.programming-box-six,
+.programming-box-seven,
+.programming-box-eight {
+    width: 49%;
+    margin: 1%;
+}
+
 .project-grid h4 {
-text-align: center;
-margin-bottom: 1%;
+    text-align: center;
+    margin-bottom: 1%;
 }
 
 .project-grid  {
@@ -281,7 +452,6 @@ margin-bottom: 1%;
 
 #personalmain img {
     width: 70%;
-
 }
 
 .introp h1 {
