@@ -47,6 +47,29 @@ header {
     margin-right: 20px;
 }
 
+.intro-sec {
+    display: flex;
+}
+
+.intro h1 {
+    font-size: 1.7rem;
+    margin-bottom: 5%;
+}
+
+.intro,
+.image {
+    width: 48%;
+    justify-content: space-evenly;
+    margin: 1%;
+}
+
+.image img{
+    width: 80%;
+    border-radius: 300px;
+    margin-top: 1%;
+    margin-right: 2%    ;
+}
+
 label {
     padding: 23px 20px;
     position: absolute;
@@ -521,4 +544,26 @@ footer  {
     background-image: url("https://www.transparenttextures.com/patterns/subtle-carbon.png");
     margin-top: 1%;
     margin-bottom: 0%;
+}
+
+footer nav {
+    display: flex;
+}
+
+footer nav a  {
+    width: 40%;
+    margin-right: 0;
+}
+
+footer nav img{   
+    width: 30%;
+}
+
+.footer-content {
+    margin-top: 3%;
+    text-align: center;
+}
+
+hr {
+    color: black;
 }

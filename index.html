@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="header-content">
-          <a href="#" class="logo">logo</a>
+          <a href="index.html" class="logo" id="logo">Martha Lopez</a>
             <input type="checkbox" name="hamburger" id="hamburger">
             <label for="hamburger"><span></span></label>
 
@@ -36,12 +36,20 @@
         
     </header>
     <main>
-        <div class="intro">
+        <section class="intro-sec">
+             <div class="intro">
             <h1>Martha J. Lopez Aguirre</h1>
             <p>Welcome! I am a Mexican-American student in hopes of pursuing a career in tech. I hope to be part of the small community of other latinas working in tech and bring a new perspective to others based on my experiences and insights.  In this website I will showcase my work in different types of environments. 
             </p>
+           
         </div>
-        <div class="posts">
+        <div class="image">
+             <img src="images/pro-pic.jpg" alt="pro-pic">
+        </div>
+        
+        </section>
+       
+        <!-- <div class="posts">
             <h2>Featured Posts</h2>
             
                 <img class="slide" src="images/a-wish-from-the-earth-icon.jpg" alt="a-wish-from-the-earth-icon">
@@ -56,25 +64,18 @@
                 <img class="slide" src="images/reflective-essay.jpg" alt="reflective-essay">
             </div>
 
-        </div>   
+        </div>    -->
     </main>
     <footer>
         <nav>
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="resume.html">resume</a></li>
-                <li><a href="overview.html">overview</a></li></li>
-                <li><a href="programming.html">programming projects</a></li>
-                <li><a href="writing.html">writing projects</a></li>
-                <li><a href="personal.html">personal work</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
+            <a href="index.html#logo"><img src="images/arrow-up.png" alt="arrow-up"></a>
         </nav>
         <div class="footer-content">
+            <hr id="hr">
             <p>Icons created by Flaticon</p>
             <h4>©2023 Martha Lopez</h4> 
         </div>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
