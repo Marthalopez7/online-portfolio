@@ -225,6 +225,30 @@ main {
     border-radius: 25px;
 }
 
+.fp {
+    background-color: #F2ACCD;
+    max-width: 1280px;
+    margin: 1%;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.fp1 {
+    margin-left: 14.9%;
+    background-color: #F2CED5;
+    max-width: 900px;
+}
+
+.fp1 h3 {
+    text-align: center;
+    padding: 1%;
+}
 .aboutmain {
     max-width: 1280px;
     margin: 0 auto;
@@ -238,7 +262,15 @@ main {
 }
 
 .hobbies img {
-    width: 320px;   
+    width: 300px;   
+}
+
+.space {
+    width: 5px;
+}
+
+.movie-title {
+    width: 15px;
 }
 
 .about-text {
@@ -282,13 +314,15 @@ main {
     margin: 1%;
 }
 
-/* .modal {
-position: fixewed
+
+.modal {
+    position: fixed;
     background-color: rgba(0, 0, 0, 0.19);
     z-index: 2;
-} */
+    display: none;
+}
 
-/* .modal-content  {
+.modal-content  {
     background-color: #F2E4E4;
     margin-top: 1%;
     width: 50%;
@@ -317,16 +351,17 @@ position: fixewed
     padding: 1%;
 }
 
-.model-footer {
+.modal-footer {
     padding: 1%;
 }
 
-.model-footer .modal-close {
+.modal-footer .modal-close {
     padding: 1%;
     border: none;
     outline: none;
-    border-radius: 25px;
-} */
+    border-radius: 15px;
+    color: #391BA6;
+}
 
 #buttons-contaienr {
     display: flex;
