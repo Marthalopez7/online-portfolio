@@ -284,12 +284,6 @@ main {
     font-size: 1.7rem;
 }
 
-.awards-and-achievements {
-    max-width: 1290px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .awards-and-achievements img  {
     width: 320px;
@@ -314,8 +308,64 @@ main {
     margin: 1%;
 }
 
+button:active {
+    transform: scale(0.9);
+}
+
+#btn {
+    cursor: pointer;
+}
+
+.modal-btn  {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+}
 
 .modal {
+    width: 450px;
+    position: fixed;
+    margin-top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #B8B6F2;
+    border-radius: 10px;
+    z-index: 2;
+    background-color: #B8B6F2;
+}
+
+.modal:active {
+    top: 15%;
+}
+
+.header  {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid #B8B6F2;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.body {
+    padding: 1rem;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#overlay.active {
+  display: block;
+}
+
+/* .modal {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.19);
     z-index: 2;
@@ -360,7 +410,7 @@ main {
     border: none;
     outline: none;
     border-radius: 15px;
-    color: #391BA6;
+    color: #391BA6; */
 }
 
 #buttons-contaienr {
@@ -399,7 +449,7 @@ main {
     margin: 1%;
 }
 
-.title {
+.course {
     color: #BF7ABB;
 }
 
