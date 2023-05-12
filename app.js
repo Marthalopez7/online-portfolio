@@ -50,9 +50,9 @@ window.onload = slideshow
 // const imgbtn15 = document.getElementById('#button15')
 // const imgbtn16 = document.getElementById('#button16')
 
- var btns = document.querySelectorAll('[data-target]')
+ const btns = document.querySelectorAll('[data-target]')
  const overlay = document.getElementById('overlay')
- const close_modals = document.querySelectorAll(".close-modal");
+ const closebtn = document.querySelectorAll(".close-modal");
 
  btns.forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -61,7 +61,7 @@ window.onload = slideshow
     });
   });
 
-  close_modals.forEach((btn) => {
+  closebtn.forEach((btn) => {
     btn.addEventListener("click", () => {
       const modal = btn.closest(".modal");
       modal.classList.remove("active");
