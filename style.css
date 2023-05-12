@@ -265,14 +265,6 @@ main {
     width: 300px;   
 }
 
-.space {
-    width: 5px;
-}
-
-.movie-title {
-    width: 15px;
-}
-
 .about-text {
     background-color: #F2ACCD;
     border-radius: 25px;
@@ -282,17 +274,6 @@ main {
 
 .about-text h1 {
     font-size: 1.7rem;
-}
-
-.awards-and-achievements {
-    max-width: 1290px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.awards-and-achievements img  {
-    width: 320px;
 }
 
 .post-secondary-plan {
@@ -314,53 +295,62 @@ main {
     margin: 1%;
 }
 
+button:active {
+    transform: scale(0.9);
+}
+
+#btn {
+    cursor: pointer;
+}
+
+.modal-btn  {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+}
 
 .modal {
+    width: 450px;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.19);
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: top 0.5 ease-in-out;
+    border: 1px solid #B8B6F2;
+    border-radius: 10px;
     z-index: 2;
-    display: none;
-}
-
-.modal-content  {
-    background-color: #F2E4E4;
-    margin-top: 1%;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1%;
-    border-radius: 25px;
-    z-index: 4;
-    max-width: 1280px;
-}
-
-.modal-header {
-    padding: 1% 0;
-}
-
-.modal-header .modal-close {
-    float: right;
     background-color: #B8B6F2;
-    border: 0;
-    outline: 0;
-    padding: 1%;
-    border-radius: 25px;
 }
 
-.modal-body p {
-    padding: 1%;
+.modal.active {
+    top: 50%;
 }
 
-.modal-footer {
-    padding: 1%;
+.header  {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid #B8B6F2;
+    align-items: center;
+    padding: 0.5rem 1rem;
 }
 
-.modal-footer .modal-close {
-    padding: 1%;
-    border: none;
-    outline: none;
-    border-radius: 15px;
-    color: #391BA6;
+.body {
+    padding: 1rem;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#overlay.active {
+  display: block;
 }
 
 #buttons-contaienr {
@@ -399,7 +389,7 @@ main {
     margin: 1%;
 }
 
-.title {
+.course {
     color: #BF7ABB;
 }
 
