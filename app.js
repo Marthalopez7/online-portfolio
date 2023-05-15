@@ -1,19 +1,19 @@
 // slideshow home
 var i = 0
-var images = [];
+var pics = [];
 var time = 5000;
 
-images[0] = 'images/a-wish-from-the-earth-icon.jpg'
-images[1] = 'images/battlewitch-icon.jpg'
-images[2] = 'images/delvehomes-icon.jpg'
-images[3] = 'images/pursuit-of-healthyness-poster-icon.jpg'
-images[4] = 'images/gov-video.jpg'
-images[5] = 'images/Career-research-essay.jpg'
-images[6] = 'images/reflective-essay.jpg'
+pics[0] = 'images/a-wish-from-the-earth-icon.jpg'
+pics[1] = 'images/battlewitch-icon.jpg'
+pics[2] = 'images/delvehomes-icon.jpg'
+pics[3] = 'images/pursuit-of-healthyness-poster-icon.jpg'
+pics[4] = 'images/gov-video.jpg'
+pics[5] = 'images/Career-research-essay.jpg'
+pics[6] = 'images/reflective-essay.jpg'
 
 function slideshow() {
-    document.slide.src = images[i];
-    if (i < images.length - 1) {
+    document.slide.src = pics[i];
+    if (i < pics.length - 1) {
         i++;
     } else {
         i = 0
@@ -51,20 +51,41 @@ window.onload = slideshow
     }
   }
 
-  // carousel contact page
-const buttons = document.querySelectorAll("data-carousel-button")
+// carousel contact
+const slider = document.querySelector('.image-slider')
+const arrLeft = document.querySelector('.arrow-left')
+const arrRight = document.querySelector('.arrow-right')
 
-buttons.forEach(button => {
-  button.addEventListener('click', () => {
-    const offset = button.dataset.carouselButton === "next" ? 1 : -1
-    const slides = button.closest('[data-carousel]').querySelector('[data-slides]')
+const images = [
+  'images/a-wish-from-the-earth-icon.jpg',
+  'images/battlewitch-icon.jpg', 
+  'images/delvehomes-icon.jpg'
+];
 
-    const activeSlide = slides.querySelector('[data-active]')
-    let newIndex = [...slides.children].indexOf(activeSlide) + offset
-    if (newIndex < 0) newIndex = slides.children.length - 1
-    if (newIndex >= slides.children.length) newIndex = 0
+let id = 0;
 
-    slides.children[newIndex].dataset.active = true
-    delete activeSlide.dataset.active
-  })
-} )
+function slide(id) {
+  slider.style.backgroundImage = `url(img/${images[id]})`;
+  slider.classList.add('image-fade');
+  setTimeout(() => {
+    slider.classList.remove('image-fade');
+  }, 550);
+}
+
+arrLeft.addEventListener('click', () => {
+  id--;
+
+  if(id < 0) {
+    id = images.length - 1;
+  }
+  slide(id);
+});
+
+arrRight.addEventListener('click', () => {
+  id++;
+
+  if(id > images.length - 1) {
+    id = 0;
+  }
+  slide(id);
+});
