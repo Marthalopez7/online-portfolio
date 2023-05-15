@@ -52,40 +52,40 @@ window.onload = slideshow
   }
 
 // carousel contact
-const slider = document.querySelector('.image-slider')
-const arrLeft = document.querySelector('.arrow-left')
-const arrRight = document.querySelector('.arrow-right')
+// const slider = document.querySelector('.image-slider')
+// const arrLeft = document.querySelector('.arrow-left')
+// const arrRight = document.querySelector('.arrow-right')
 
-const images = [
-  'images/a-wish-from-the-earth-icon.jpg',
-  'images/battlewitch-icon.jpg', 
-  'images/delvehomes-icon.jpg'
-];
+// const images = [
+//   'images/a-wish-from-the-earth-icon.jpg',
+//   'images/battlewitch-icon.jpg', 
+//   'images/delvehomes-icon.jpg'
+// ];
 
-let id = 0;
+// let id = 0;
 
-function slide(id) {
-  slider.style.backgroundImage = `url(img/${images[id]})`;
-  slider.classList.add('image-fade');
-  setTimeout(() => {
-    slider.classList.remove('image-fade');
-  }, 550);
-}
+// function slide(id) {
+//   slider.style.backgroundImage = `url(img/${images[id]})`;
+//   slider.classList.add('image-fade');
+//   setTimeout(() => {
+//     slider.classList.remove('image-fade');
+//   }, 550);
+// }
 
-arrLeft.addEventListener('click', () => {
-  id--;
+// arrLeft.addEventListener('click', () => {
+//   id--;
 
-  if(id < 0) {
-    id = images.length - 1;
-  }
-  slide(id);
-});
+//   if(id < 0) {
+//     id = images.length - 1;
+//   }
+//   slide(id);
+// });
 
-arrRight.addEventListener('click', () => {
-  id++;
+// arrRight.addEventListener('click', () => {
+//   id++;
 
-  if(id > images.length - 1) {
-    id = 0;
-  }
-  slide(id);
-});
+//   if(id > images.length - 1) {
+//     id = 0;
+//   }
+//   slide(id);
+// });
